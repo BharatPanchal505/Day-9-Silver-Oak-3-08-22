@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("#SliUp").click(function(){
+	$("#flower").slideUp();
+	});
+		
+$("#SliDown").click(function(){
+	$("#flower").slideDown();
+	});
+
+$("#SliTogg").click(function(){
+	$("#flower").slideToggle();
+	});
+});
+</script>
+</head>
+<body style="font-family:arial"> 
+<div style="width:40%;background-color:black; color:lightgray; text-align:center; padding-top:10px;padding-bottom:20px"> 
+<input type="button" id="SliUp" value="Slide Up" style="background-color:black;color:lightgray;">
+<input type="button" id="SliDown" value="Slide Down" style="background-color:black;color:lightgray;">
+<input type="button" id="SliTogg" value="Slide Toggle" style="background-color:black;color:lightgray;">
+</div>
+<img src="https://csveda.com/wp-content/uploads/2020/05/flower-1024x678.jpg" id="flower" height="40%" width="40%">
+</body>
+</html>
